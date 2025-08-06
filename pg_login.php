@@ -15,8 +15,6 @@ if (isset($_POST['Connexion'])) {
         // var_dump($user['password']);
         // var_dump(password_verify($password, $user['password']));
         // exit;
-
-
         //var_dump($user, $password, $user ? $user['password'] : null);
         if ($user && password_verify($password, $user['password'])) {
             $_SESSION['nom'] = $user['nom'];
